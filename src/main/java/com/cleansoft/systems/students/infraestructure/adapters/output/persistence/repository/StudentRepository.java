@@ -10,7 +10,7 @@ import java.util.Optional;
 @Repository
 public interface StudentRepository extends JpaRepository<StudentEntity, Long> {
 
-    Optional<StudentEntity> findStudentById(Long id);
+    Optional<StudentEntity> findById(Long id);
 
     List<StudentEntity> findAll();
 }

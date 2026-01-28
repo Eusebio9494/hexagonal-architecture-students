@@ -1,4 +1,4 @@
-package com.cleansoft.systems.students.domain.Model;
+package com.cleansoft.systems.students.domain.model;
 
 import lombok.Builder;
 import lombok.Getter;

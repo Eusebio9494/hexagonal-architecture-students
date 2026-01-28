@@ -1,6 +1,6 @@
 package com.cleansoft.systems.students.infraestructure.adapters.output.persistence.mapper;
 
-import com.cleansoft.systems.students.domain.Model.StudentModel;
+import com.cleansoft.systems.students.domain.model.StudentModel;
 import com.cleansoft.systems.students.infraestructure.adapters.output.persistence.entity.StudentEntity;
 import org.mapstruct.Mapper;
 

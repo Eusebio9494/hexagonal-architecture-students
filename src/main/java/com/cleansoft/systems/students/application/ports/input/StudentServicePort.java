@@ -1,6 +1,6 @@
 package com.cleansoft.systems.students.application.ports.input;
 
-import com.cleansoft.systems.students.domain.Model.StudentModel;
+import com.cleansoft.systems.students.domain.model.StudentModel;
 
 import java.util.List;
 
@@ -12,7 +12,7 @@ public interface StudentServicePort {
 
     StudentModel saveStudent(StudentModel studentModel);
 
-    StudentModel updateStudent(StudentModel studentModel);
+    StudentModel updateStudent(StudentModel studentModel, Long id);
 
-    void deleteStudent(Long id);
+    void deleteStudentById(Long id);
 }

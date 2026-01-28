@@ -1,6 +1,6 @@
 package com.cleansoft.systems.students.application.ports.output;
 
-import com.cleansoft.systems.students.domain.Model.StudentModel;
+import com.cleansoft.systems.students.domain.model.StudentModel;
 
 import java.util.List;
 import java.util.Optional;
