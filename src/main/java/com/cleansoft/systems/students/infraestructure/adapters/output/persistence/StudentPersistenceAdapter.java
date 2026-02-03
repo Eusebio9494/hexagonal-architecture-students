@@ -10,6 +10,13 @@ import org.springframework.stereotype.Component;
 import java.util.List;
 import java.util.Optional;
 
+/**
+ * Adaptador de persistencia para la entidad Student.
+ *
+ * @author Eusebio Olvera Chávez
+ * @version 1.0.0
+ * @since 27/01/2026
+ */
 @Component
 @RequiredArgsConstructor
 public class StudentPersistenceAdapter implements StudentPersistencePort {

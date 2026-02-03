@@ -12,6 +12,13 @@ import java.util.List;
 import static com.cleansoft.systems.students.util.ErrorCatalog.STUDENTS_NOT_FOUND;
 import static com.cleansoft.systems.students.util.ErrorCatalog.STUDENT_NOT_FOUND;
 
+/**
+ * Servicio que implementa la lógica de negocio relacionada con los estudiantes.
+ *
+ * @author Eusebio Olvera Chávez
+ * @version 1.0.0
+ * @since 27/01/2026
+ */
 @RequiredArgsConstructor
 @Service
 public class StudentService implements StudentServicePort {

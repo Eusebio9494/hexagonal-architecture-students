@@ -7,6 +7,13 @@ import org.springframework.stereotype.Repository;
 import java.util.List;
 import java.util.Optional;
 
+/**
+ * Repositorio JPA para la entidad Student.
+ *
+ * @author Eusebio Olvera Chávez
+ * @version 1.0.0
+ * @since 27/01/2026
+ */
 @Repository
 public interface StudentRepository extends JpaRepository<StudentEntity, Long> {
 

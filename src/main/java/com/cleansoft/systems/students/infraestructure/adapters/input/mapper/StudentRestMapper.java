@@ -8,6 +8,13 @@ import org.mapstruct.ReportingPolicy;
 
 import java.util.List;
 
+/**
+ * Interface para mapear entre StudentCreateRequest, StudentModel y StudentResponse.
+ *
+ * @author Eusebio Olvera Chávez
+ * @version 1.0.0
+ * @since 27/01/2026
+ */
 @Mapper(componentModel = "spring", unmappedTargetPolicy = ReportingPolicy.IGNORE)
 public interface StudentRestMapper {
 

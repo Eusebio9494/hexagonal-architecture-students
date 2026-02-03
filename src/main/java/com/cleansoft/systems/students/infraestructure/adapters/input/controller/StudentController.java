@@ -12,6 +12,13 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
+/**
+ * StudentController
+ *
+ * @author Eusebio Olvera Chávez
+ * @version 1.0.0
+ * @since 27/01/2026
+ */
 @RestController
 @RequestMapping("/api/students")
 @RequiredArgsConstructor
