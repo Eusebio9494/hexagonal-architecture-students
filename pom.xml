@@ -28,6 +28,7 @@
 	</scm>
 	<properties>
 		<java.version>21</java.version>
+		<assertj.version>3.27.7</assertj.version> <!-- Version de AssertJ para corregir: CVE-2026-24400-->
 	</properties>
 	<dependencies>
 		<dependency>
@@ -66,6 +67,7 @@
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-data-jdbc-test</artifactId>
+			<version>4.0.2</version>
 			<scope>test</scope>
 		</dependency>
 		<dependency>
