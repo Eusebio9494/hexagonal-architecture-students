@@ -1,14 +1,16 @@
-package com.cleansoft.systems.students.infraestructure.adapters;
+package com.cleansoft.systems.students.infraestructure.adapters.output.persistence;
 
 import com.cleansoft.systems.students.application.ports.output.StudentPersistencePort;
 import com.cleansoft.systems.students.domain.model.StudentModel;
 import com.cleansoft.systems.students.infraestructure.adapters.output.persistence.mapper.StudentPersistenceMapper;
 import com.cleansoft.systems.students.infraestructure.adapters.output.persistence.repository.StudentRepository;
 import lombok.RequiredArgsConstructor;
+import org.springframework.stereotype.Component;
 
 import java.util.List;
 import java.util.Optional;
 
+@Component
 @RequiredArgsConstructor
 public class StudentPersistenceAdapter implements StudentPersistencePort {
 

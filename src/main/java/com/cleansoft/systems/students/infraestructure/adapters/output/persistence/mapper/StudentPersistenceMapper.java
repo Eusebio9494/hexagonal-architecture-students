@@ -3,6 +3,7 @@ package com.cleansoft.systems.students.infraestructure.adapters.output.persisten
 import com.cleansoft.systems.students.domain.model.StudentModel;
 import com.cleansoft.systems.students.infraestructure.adapters.output.persistence.entity.StudentEntity;
 import org.mapstruct.Mapper;
+import org.springframework.stereotype.Component;
 
 import java.util.List;
 

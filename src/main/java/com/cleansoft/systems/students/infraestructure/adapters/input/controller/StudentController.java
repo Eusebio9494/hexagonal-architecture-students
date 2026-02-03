@@ -37,14 +37,14 @@ public class StudentController {
                 .body(studentRestMapper.toStudentResponse(studentServicePort.saveStudent(studentRestMapper.toStudentModel(request))));
     }
 
-    @PutMapping
+    @PutMapping("/{id}")
     public ResponseEntity<StudentResponse> update(@Valid @RequestBody StudentCreateRequest request, @PathVariable("id") Long id){
         return ResponseEntity
                 .status(HttpStatus.ACCEPTED)
                 .body(studentRestMapper.toStudentResponse(studentServicePort.updateStudent(studentRestMapper.toStudentModel(request), id)));
     }
 
-    @DeleteMapping
+    @DeleteMapping("/{id}")
     public void delete(@PathVariable("id") Long id){
         studentServicePort.deleteStudentById(id);
     }

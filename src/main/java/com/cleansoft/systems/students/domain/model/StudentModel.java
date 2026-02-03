@@ -11,7 +11,7 @@ public class StudentModel {
 
     private Long id;
 
-    private String name;
+    private String firstName;
 
     private String lastName;
 
