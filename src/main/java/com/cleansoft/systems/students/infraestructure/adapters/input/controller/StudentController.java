@@ -1,8 +1,10 @@
 package com.cleansoft.systems.students.infraestructure.adapters.input.controller;
 
 import com.cleansoft.systems.students.application.ports.input.StudentServicePort;
+import com.cleansoft.systems.students.application.ports.output.PdfTemplatePort;
 import com.cleansoft.systems.students.infraestructure.adapters.input.mapper.StudentRestMapper;
 import com.cleansoft.systems.students.infraestructure.adapters.input.model.request.StudentCreateRequest;
+import com.cleansoft.systems.students.infraestructure.adapters.input.model.response.PdfResponse;
 import com.cleansoft.systems.students.infraestructure.adapters.input.model.response.StudentResponse;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
@@ -28,13 +30,17 @@ public class StudentController {
     private final StudentRestMapper studentRestMapper;
 
     @GetMapping
-    public List<StudentResponse> findAll() {
-        return studentRestMapper.toStudentResponseList(studentServicePort.findAll());
+    public ResponseEntity<List<StudentResponse>> findAll() {
+        return ResponseEntity
+                .status(HttpStatus.OK)
+                .body(studentRestMapper.toStudentResponseList(studentServicePort.findAll()));
     }
 
     @GetMapping("/{id}")
-    public StudentResponse findById(@PathVariable("id") Long id) {
-        return studentRestMapper.toStudentResponse(studentServicePort.findStudentById(id));
+    public ResponseEntity<StudentResponse> findById(@PathVariable("id") Long id) {
+        return ResponseEntity
+                .status(HttpStatus.OK)
+                .body(studentRestMapper.toStudentResponse(studentServicePort.findStudentById(id)));
     }
 
     @PostMapping
